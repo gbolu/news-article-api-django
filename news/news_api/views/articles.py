@@ -39,6 +39,7 @@ def getSingleArticle(_, id):
 
 @api_view(['POST'])
 def createArticle(request: Request):
+    # check if request data for creating article is valid
     serializer = ArticleSerializer(data=request.data)
     if not serializer.is_valid():
         return composeResponse(None, 'invalid request', status.HTTP_400_BAD_REQUEST, serializer.errors)

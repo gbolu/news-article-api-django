@@ -13,6 +13,8 @@ class Paginate:
         self.limit = limit
         return self
 
+# Create a response object in JSON format to be sent via HTTP
+
 
 def composeResponse(data, message, code=200, error=None):
     response_data = {}

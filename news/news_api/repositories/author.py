@@ -5,6 +5,8 @@ from ..serializers.author import AuthorSerializer
 
 from ..utils import Paginate
 
+# Responsible for encapsulating the logic of reaching out to the author data sources.
+
 
 class AuthorRepository:
     def get_all(self, paginate: Paginate):

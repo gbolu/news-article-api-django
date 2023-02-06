@@ -6,6 +6,8 @@ from django.core.paginator import Paginator
 
 from ..utils import Paginate
 
+# Responsible for encapsulating the logic of reaching out to the category data sources.
+
 
 class CategoryRepository:
     def get_all(self, paginate: Paginate):

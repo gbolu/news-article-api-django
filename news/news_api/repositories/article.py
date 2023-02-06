@@ -5,7 +5,7 @@ from ..serializers.article import ArticleSerializer
 
 from ..utils import Paginate
 
-
+# Responsible for encapsulating the logic of reaching out to the article data sources.
 class ArticleRepository:
     def get_all(self, paginate: Paginate):
         articles = Paginator(Article.objects.all().select_related('author'), paginate.limit).page(
