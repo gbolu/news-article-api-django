@@ -23,6 +23,3 @@ The API Reference sits on Postman [here](https://documenter.getpostman.com/view/
    - Add a unique string of characters to the `SECRET_KEY` to start the Django server.
    - Run the command `python3 news/manage.py runserver` to start the server.
 ## Documentation
-
-Documentation lies here in [Confluence](https://linktodocumentation).
-
